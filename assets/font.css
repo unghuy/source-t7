@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MPlus1';
+    src: url('./font/MPLUS1-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arsenal';
+    src: url('./font/static/Arsenal-Regular.ttf') format('truetype');
+}
