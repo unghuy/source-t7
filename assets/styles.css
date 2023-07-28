@@ -557,11 +557,15 @@ footer .container {
   display: none;
 }
 
-.hover {
+.hover, .btn-hover {
   transition: .3s ease;
 }
 
 .hover:hover {
+  color: var(--primary-color);
+}
+
+.btn-hover:hover {
   box-shadow: inset 285px 0 0 0 var(--white);
   color: var(--primary-color);
 }
