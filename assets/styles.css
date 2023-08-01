@@ -11,8 +11,8 @@ body {
   font-family: var(--font-family);
   font-size: 20px;
   font-weight: 400;
-  height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -62,6 +62,15 @@ footer {
   /*ie10*/
   -ms-flex-preferred-size: 50px;
 
+  /*center align of links*/
+  display: flex;
+  align-items: center;
+  /*vertical*/
+  justify-content: space-around;
+  /*or space-between*/
+  /*ie10*/
+  display: -ms-flexbox;
+  -ms-flex-align: center;
   /*vertical*/
   -ms-flex-line-pack: distribute;
   /*or justify*/
@@ -81,6 +90,7 @@ main {
 
   /*ie10*/
   -ms-flex: 1 1 auto;
+
   /*needs both shrink and grow*/
   margin: 0 150px;
 }
