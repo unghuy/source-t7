@@ -18,159 +18,166 @@
 </head>
 
 <body>
-  <header>
-    <div class="wrapper">
-      <div class="logo" id="brand">
-        <div class="logo">
-          <img src="./assets/img/logo.png" alt="Logo">
+  <div class="f-container fixed-hf">
+    <header>
+      <div class="wrapper">
+        <div class="logo" id="brand">
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="Logo">
+          </div>
+        </div>
+        <nav class="menu-header">
+          <ul class="menu-content">
+            <li class="menu-item"><a class="nav-link hover" href="#">Technology</a></li>
+            <li class="menu-item"><a class="nav-link hover" href="#">Solutions</a></li>
+            <li class="menu-item"><a class="nav-link hover" href="#">Crops</a></li>
+            <li class="menu-item"><a class="nav-link hover" href="#">Packages</a></li>
+            <li class="menu-item"><a class="nav-link hover" href="#">About Us</a></li>
+          </ul>
+          <div class="btn-header">
+            <a class="btn white-btn btn-hover" href="https://opensea.io/collection/mcb-founder-club">OpenSea</a>
+            <a class="btn dark-btn btn-hover" href="https://mcb.cash/">MCB</a>
+          </div>
+        </nav>
+
+        <!-- 
+          Menu navbar
+         -->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="menu-mobile-icon bar1"></div>
+          <div class="menu-mobile-icon bar2"></div>
+          <div class="menu-mobile-icon bar3"></div>
+          <ul class="mobile-menu">
+            <li class="menu-item hidden"><a class="nav-link hover" href="#">Technology</a></li>
+            <li class="menu-item hidden"><a class="nav-link hover" href="#">Solutions</a></li>
+            <li class="menu-item"><a class="nav-link hover" href="#">Crops</a></li>
+            <li class="menu-item"><a class="nav-link hover" href="#">Packages</a></li>
+            <li class="menu-item"><a class="nav-link hover" href="#">About Us</a></li>
+            <li class="menu-item"><a class="nav-link opensea btn-hover" href="#">OpenSea</a></li>
+            <li class="menu-item"><a class="nav-link mcb btn-hover" href="#">MCB</a></li>
+          </ul>
         </div>
       </div>
-      <nav class="menu-header">
-        <ul class="menu-content">
-          <li class="menu-item"><a class="nav-link hover" href="#">Technology</a></li>
-          <li class="menu-item"><a class="nav-link hover" href="#">Solutions</a></li>
-          <li class="menu-item"><a class="nav-link hover" href="#">Crops</a></li>
-          <li class="menu-item"><a class="nav-link hover" href="#">Packages</a></li>
-          <li class="menu-item"><a class="nav-link hover" href="#">About Us</a></li>
-          <!-- <li class="menu-item">
-            <ul class="link-button">
-              <button class="btn white-btn hover" type="button">OpenSea</button>
-              <button class="btn dark-btn hover" type="button">MCB</button> 
+    </header>
+
+    <main>
+      <div class="pre-content">
+        <div class="content-left">
+          <h1 class="text-pre">Premium<span class="dot">,</span><br class="mobile-dots" /> Sustainable<span
+              class="dot">,</span><br class="mobile-dots" /> Plant Grown
+            Vertically in <span class="sub-text">Al Close-Loop</span>
+          </h1>
+          <p class="text hidden">
+            MediCann is the Future of Sustainable Agriculture, integrating innovative cultivation methods, modular
+            framing
+            technologies, and closed-loop sensors systems to produce high-value medical-grade cash crops.
+          </p>
+          <a class="btn btn-work btn-hover" href="#">How it work?</a>
+        </div>
+        <div class="content-right">
+          <img class="banner-img" src="./assets/img/banner.png" alt="Banner">
+        </div>
+      </div>
+      <div class="offer-content mobile-only">
+        <p class="text">WE OFFER CONSULTING & GROW SERVICES FOR CASH CROPS PRECISION CULTIVATION</p>
+        <div class="slider-breadcrumbs">
+          <div class="slider">
+            <ul class="breadcrumbs">
+              <li class="wait"><a class="link" href="#">Don't wait</a></li>
+              <li class="join"><a class="link" href="#">Join us</a></li>
+              <li class="earn"><a class="link" href="#">Earn now</a></li>
             </ul>
-          </li> -->
-        </ul>
-        <div class="btn-header">
-          <a class="btn white-btn btn-hover" href="https://opensea.io/collection/mcb-founder-club">OpenSea</a>
-          <a class="btn dark-btn btn-hover" href="https://mcb.cash/">MCB</a>
-        </div>
-      </nav>
-
-      <!-- 
-        Menu navbar
-       -->
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="menu-mobile-icon bar1"></div>
-        <div class="menu-mobile-icon bar2"></div>
-        <div class="menu-mobile-icon bar3"></div>
-        <ul class="mobile-menu">
-          <li class="menu-item hidden"><a class="nav-link hover" href="#">Technology</a></li>
-          <li class="menu-item hidden"><a class="nav-link hover" href="#">Solutions</a></li>
-          <li class="menu-item"><a class="nav-link hover" href="#">Crops</a></li>
-          <li class="menu-item"><a class="nav-link hover" href="#">Packages</a></li>
-          <li class="menu-item"><a class="nav-link hover" href="#">About Us</a></li>
-          <li class="menu-item"><a class="nav-link opensea btn-hover" href="#">OpenSea</a></li>
-          <li class="menu-item"><a class="nav-link mcb btn-hover" href="#">MCB</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="pre-content">
-      <div class="content-left">
-        <h1 class="text-pre">Premium<span class="dot">,</span><br class="mobile-dots" /> Sustainable<span class="dot">,</span><br class="mobile-dots" /> Plant Grown
-          Vertically in <span class="sub-text">Al Close-Loop</span>
-        </h1>
-        <p class="text hidden">MediCann is the Future of Sustainable Agriculture, integrating innovative cultivation methods,
-          technology and close-loop systems to produce premium medical-grade cash crops.
-        </p>
-        <a class="btn btn-work btn-hover" href="#">How it work?</a>
-      </div>
-      <div class="content-right">
-        <img class="banner-img" src="./assets/img/banner.png" alt="Banner">
-      </div>
-    </div>
-    <div class="offer-content mobile-only">
-      <p class="text">WE OFFER CONSULTING & GROW SERVICES FOR CASH CROPS PRECISION CULTIVATION</p>
-      <div class="slider-breadcrumbs">
-        <div class="slider">
-          <ul class="breadcrumbs">
-            <li class="wait"><a class="link" href="#">Don't wait</a></li>
-            <li class="join"><a class="link" href="#">Join us</a></li>
-            <li class="earn"><a class="link" href="#">Earn now</a></li>
-          </ul>
-          <ul class="breadcrumbs">
-            <li class="wait"><a class="link" href="#">Don't wait</a></li>
-            <li class="join"><a class="link" href="#">Join us</a></li>
-            <li class="earn"><a class="link" href="#">Earn now</a></li>
-          </ul>
-          <ul class="breadcrumbs">
-            <li class="wait"><a class="link" href="#">Don't wait</a></li>
-            <li class="join"><a class="link" href="#">Join us</a></li>
-            <li class="earn"><a class="link" href="#">Earn now</a></li>
-          </ul>
+            <ul class="breadcrumbs">
+              <li class="wait"><a class="link" href="#">Don't wait</a></li>
+              <li class="join"><a class="link" href="#">Join us</a></li>
+              <li class="earn"><a class="link" href="#">Earn now</a></li>
+            </ul>
+            <ul class="breadcrumbs">
+              <li class="wait"><a class="link" href="#">Don't wait</a></li>
+              <li class="join"><a class="link" href="#">Join us</a></li>
+              <li class="earn"><a class="link" href="#">Earn now</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="flow-content numbered-block">
-      <div class="item cash-crop">
-        <div class="wrap">
-          <div class="content">
-            <div class="text-block">
-              <p class="text">Choose the right cash crops</p>
-              <p class="subtext">Select the best crops your interest</p>
+      <div class="flow-content numbered-block">
+        <div class="item cash-crop">
+          <div class="wrap">
+            <div class="content">
+              <div class="text-block">
+                <p class="text">Choose the right cash crops</p>
+                <p class="subtext">Select the best crops of your interest</p>
+              </div>
+            </div>
+            <img class="cash-icon" src="./assets/img/icon/cash-crop-icon.png" alt="icon-cash">
+          </div>
+          <div class="content-hover">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make a type specimen book.
+          </div>
+        </div>
+        <div class="item solution">
+          <div class="text-block">
+            <p class="text">Choose your solutions</p>
+            <p class="subtext">Pick our DePIN farming system</p>
+          </div>
+          <div class="content-hover">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s,
+          </div>
+        </div>
+        <div class="item package">
+          <div class="text-block">
+            <p class="text">Choose your package</p>
+            <p class="subtext">Decide how you will be rewarded</p>
+          </div>
+          <div class="content-hover">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="item footer-left">
+            <p class="text"><i class="cert-icon"></i>WE OFFER CONSULTING & GROW SERVICES FOR CASH CROPS PRECISION
+              CULTIVATION</p>
+          </div>
+          <div class="item footer-center">
+            <ul class="breadcrumbs">
+              <li class="wait"><a class="link" href="#">Don't wait</a></li>
+              <li class="join"><a class="link" href="#">Join us</a></li>
+              <li class="earn"><a class="link" href="#">Earn now</a></li>
+            </ul>
+          </div>
+          <div class="item footer-right">
+            <button class="btn btn-contact" type="button">Contact Us</button>
+            <div class="content-avatar">
+              <img src="./assets/img/icon/avatar-icon.png" alt="Avatar">
             </div>
           </div>
-          <img class="cash-icon" src="./assets/img/icon/cash-crop-icon.png" alt="icon-cash">
         </div>
-        <div class="content-hover">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-      </div>
-      <div class="item solution">
-        <div class="text-block">
-          <p class="text">Choose your solutions</p>
-          <p class="subtext">Place optional farming system</p>
-        </div>
-        <div class="content-hover">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        </div>
-      </div>
-      <div class="item package">
-        <div class="text-block">
-          <p class="text">Choose your package</p>
-          <p class="subtext">Decide now you will be rewarded</p>
-        </div>
-        <div class="content-hover">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="item footer-left">
-          <p class="text"><i class="cert-icon"></i>WE OFFER CONSULTING & GROW SERVICES FOR CASH CROPS PRECISION
-            CULTIVATION</p>
-        </div>
-        <div class="item footer-center">
-          <ul class="breadcrumbs">
-            <li class="wait"><a class="link" href="#">Don't wait</a></li>
-            <li class="join"><a class="link" href="#">Join us</a></li>
-            <li class="earn"><a class="link" href="#">Earn now</a></li>
-          </ul>
-        </div>
-        <div class="item footer-right">
-          <button class="btn btn-contact" type="button">Contact Us</button>
-          <div class="content-avatar">
+
+        <!-- Mobilr Footer -->
+        <div class="mobile-footer">
+          <div class="img-brand">
+            <img src="./assets/img/logo.png" alt="Logo">
             <img src="./assets/img/icon/avatar-icon.png" alt="Avatar">
+          </div>
+          <div class="btn-content">
+            <button class="btn btn-contact" type="button">Contact Us</button>
           </div>
         </div>
       </div>
-
-      <!-- Mobilr Footer -->
-      <div class="mobile-footer">
-        <div class="img-brand">
-          <img src="./assets/img/logo.png" alt="Logo">
-          <img src="./assets/img/icon/avatar-icon.png" alt="Avatar">
-        </div>
-        <div class="btn-content">
-          <button class="btn btn-contact" type="button">Contact Us</button>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <!-- Script File -->
   <script src="./assets/jquery-2.2.0.min.js"></script>
@@ -178,4 +185,4 @@
   <script src="./assets/scripts.js"></script>
 </body>
 
-</html
+</html>
