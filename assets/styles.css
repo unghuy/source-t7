@@ -9,7 +9,7 @@ body {
   background-color: var(--dark);
   color: var(--white);
   font-family: var(--font-family);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -207,17 +207,17 @@ ul {
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .content-left {
-  flex: 0.5;
-  padding-bottom: 125px;
+  flex: 0.4;
+  padding-bottom: 50px;
 }
 
 .content-left .text-pre {
   font-family: 'Arsenal', sans-serif;
-  font-size: 67px;
+  font-size: 72px;
   font-style: normal;
   font-weight: 700;
   width: 100%;
@@ -337,15 +337,15 @@ ul {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 0;
   border-radius: 0 0 15px 15px;
   padding: 34px 44px 0 53px;
-  transition: height 0.3s ease, opacity ease 0.3s, visibility linear 0.35s;
+  transition: height 0.3s ease, opacity ease 0.4s, visibility linear 0.4s;
 }
 
 .main .flow-content .item:hover .content-hover {
-  height: calc(100% + 50px);
+  height: calc(100% + 82px);
   opacity: 1;
   visibility: visible;
 }
