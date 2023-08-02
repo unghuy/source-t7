@@ -52,7 +52,6 @@ ul {
 
 .header,
 .footer {
-  flex-basis: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -344,7 +343,7 @@ ul {
   transition: height 0.3s ease, opacity ease 0.4s, visibility linear 0.4s;
 }
 
-.main .flow-content .item:hover .content-hover {
+.flow-content .item:hover .content-hover {
   height: calc(100% + 82px);
   opacity: 1;
   visibility: visible;
