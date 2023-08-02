@@ -9,7 +9,7 @@ body {
   background-color: var(--dark);
   color: var(--white);
   font-family: var(--font-family);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -37,55 +37,32 @@ ul {
   border-radius: 34px;
   border: 1px solid var(--white);
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 18px 40px;
+  padding: 13px 40px;
 }
 
 /* END BUTTON STYLE */
 
 .f-container {
   height: 100vh;
-  /* for shorter content */
   display: flex;
   flex-direction: column;
-
-  /*ie10*/
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
 }
 
-header,
-footer {
+.header,
+.footer {
   flex-basis: 50px;
-
-  /*ie10*/
-  -ms-flex-preferred-size: 50px;
-
-  /*center align of links*/
   display: flex;
   align-items: center;
-  /*vertical*/
   justify-content: space-around;
-  /*or space-between*/
-  /*ie10*/
-  display: -ms-flexbox;
-  -ms-flex-align: center;
-  /*vertical*/
-  -ms-flex-line-pack: distribute;
-  /*or justify*/
 }
 
-footer {
-  /*ie10 short content*/
-  margin-top: auto;
-}
-
-header {
+.header {
   margin: 0 90px 0 74px;
 }
 
-main {
+.main {
   flex: 1;
 
   /*ie10*/
@@ -93,11 +70,8 @@ main {
 
   /*needs both shrink and grow*/
   margin: 0 150px;
-}
-
-/* fixed header and footer with scrollable main section */
-.fixed-hf .main {
-  overflow-y: auto;
+  height: calc(100vh - 298px);
+  overflow-y: hidden;
 }
 
 .wrapper {
@@ -105,7 +79,7 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .menu-header {
@@ -232,16 +206,18 @@ main {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  width: 100%;
+  padding-top: 100px;
 }
 
 .content-left {
-  width: 50%;
-  padding: 100px 90px 20px 0;
+  flex: 0.5;
+  padding-bottom: 125px;
 }
 
 .content-left .text-pre {
   font-family: 'Arsenal', sans-serif;
-  font-size: 80px;
+  font-size: 67px;
   font-style: normal;
   font-weight: 700;
   width: 100%;
@@ -261,7 +237,7 @@ main {
 }
 
 .content-left .text {
-  padding: 50px 0;
+  padding: 25px 0 40px;
   margin-bottom: 16px;
 }
 
@@ -273,7 +249,9 @@ main {
 }
 
 .content-right {
-  width: 50%;
+  flex: 0.5;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* END PRE-CONTENT */
@@ -302,7 +280,7 @@ main {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 90px 0 130px;
+  padding: 40px 0;
 }
 
 .flow-content .item {
@@ -310,7 +288,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 15px;
-  padding: 13px 20px;
+  padding: 12px 20px;
 }
 
 .numbered-block {
@@ -348,7 +326,6 @@ main {
 
 .numbered-block .item .text-block .text {
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .numbered-block .item .text-block .subtext {
@@ -360,15 +337,15 @@ main {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 0;
   border-radius: 0 0 15px 15px;
-  padding: 34px 20px 13px;
-  transition: height 0.3s ease 0.3s, opacity 0.45s ease, visibility 0s linear 0.45s;
+  padding: 34px 44px 0 53px;
+  transition: height 0.3s ease, opacity ease 0.3s, visibility linear 0.35s;
 }
 
-.flow-content .item:hover .content-hover {
-  height: 145px;
+.main .flow-content .item:hover .content-hover {
+  height: calc(100% + 50px);
   opacity: 1;
   visibility: visible;
 }
@@ -390,7 +367,7 @@ main {
 
 .flow-content .solution {
   background-color: #059033;
-  flex: 0.35;
+  flex: 0.33;
 }
 
 .flow-content .solution .content-hover {
@@ -399,7 +376,7 @@ main {
 
 .flow-content .package {
   background-color: #064D2F;
-  flex: 0.25;
+  flex: 0.27;
 }
 
 .flow-content .package .content-hover {
@@ -441,8 +418,12 @@ main {
 /* END FLOW-CONTENT */
 
 /* FOOTER */
-footer {
+.footer {
   background-color: var(--white);
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: display 0.3s linear, visibility 0.3s linear, opacity 0.3s linear;
 }
 
 footer .container {
@@ -616,6 +597,12 @@ footer .container {
 
 .hover:hover {
   color: var(--primary-color);
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .btn-hover:hover {
