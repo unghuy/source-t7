@@ -202,10 +202,6 @@
 
 /* MOBILE MENU */
 @media only screen and (max-width: 1200px) {
-  .f-container {
-    height: 100%;
-  }
-
   .header,
   .block-main {
     margin: 0 40px;
