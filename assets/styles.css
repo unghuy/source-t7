@@ -539,14 +539,6 @@ footer .container {
   margin-left: 45px;
 }
 
-.slider-breadcrumbs .breadcrumbs .wait {
-  left: 245px;
-}
-
-.slider-breadcrumbs .breadcrumbs .earn {
-  right: 235px;
-}
-
 .footer-right {
   display: flex;
   align-items: center;

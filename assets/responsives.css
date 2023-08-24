@@ -137,7 +137,7 @@
   }
 
   main {
-    margin: 20px 30px 150px;
+    margin: 20px 20px 150px;
   }
 
   .menu-header .nav-link {
@@ -339,11 +339,27 @@
     line-height: 30px;
     text-align: center;
   }
+
+  .slider-breadcrumbs .breadcrumbs .wait {
+    left: 320px;
+  }
+
+  .slider-breadcrumbs .breadcrumbs .earn {
+    right: 310px;
+  }
 }
 
 @media only screen and (max-width: 1028px) {
   .content-left {
     width: 65%;
+  }
+
+  .slider-breadcrumbs .breadcrumbs .wait {
+    left: 245px;
+  }
+  
+  .slider-breadcrumbs .breadcrumbs .earn {
+    right: 235px;
   }
 }
 
