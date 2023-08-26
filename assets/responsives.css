@@ -238,6 +238,7 @@
   .pre-content {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
   }
 
   .content-left {
@@ -254,7 +255,7 @@
 
   .content-right {
     width: 100%;
-    margin: 100px auto 50px;
+    margin: 150px auto;
     justify-content: center;
   }
 
@@ -386,7 +387,7 @@
   }
 
   .slider-breadcrumbs .breadcrumbs .earn {
-    right: 130px;
+    right: 135px;
   }
 
   .flow-content {
@@ -447,7 +448,7 @@
   }
 
   .content-right {
-    margin: 50px auto;
+    margin: 80px auto;
   }
 
   .flow-content {
@@ -483,11 +484,11 @@
   }
 
   .slider-breadcrumbs .breadcrumbs .wait {
-    left: 55px;
+    left: 60px;
   }
 
   .slider-breadcrumbs .breadcrumbs .earn {
-    right: 45px;
+    right: 55px;
   }
 
   /* Slick Slider dots mobile */
@@ -543,11 +544,21 @@
   }
 
   .slider-breadcrumbs .breadcrumbs .wait {
-    left: 40px;
+    left: 50px;
   }
 
   .slider-breadcrumbs .breadcrumbs .earn {
-    right: 30px;
+    right: 45px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .slider-breadcrumbs .breadcrumbs .wait {
+    left: 45px;
+  }
+
+  .slider-breadcrumbs .breadcrumbs .earn {
+    right: 35px;
   }
 }
 
@@ -561,8 +572,49 @@
     width: 100%;
   }
 
+  .slider-breadcrumbs .breadcrumbs .wait {
+    left: 35px;
+  }
+
+  .slider-breadcrumbs .breadcrumbs .earn {
+    right: 30px;
+  }
+
   .numbered-block .item .text-block::before {
     left: -5px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  body {
+    font-size: 10px;
+  }
+
+  .header, main {
+    margin: 0 15px;
+  }
+
+  .content-left .text-pre {
+    font-size: 24px;
+  }
+
+  .offer-content>.text {
+    padding: 0 10px;
+    line-height: 20px;
+  }
+
+  .slider-breadcrumbs .breadcrumbs li {
+    width: 84px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .slider-breadcrumbs .breadcrumbs .wait {
+    left: 25px;
+  }
+
+  .slider-breadcrumbs .breadcrumbs .earn {
+    right: 20px;
   }
 }
 
